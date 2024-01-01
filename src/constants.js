@@ -1,0 +1,1 @@
+export const LOGIN_IMG ="./img/employee1.png"
