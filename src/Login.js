@@ -1,19 +1,17 @@
 import react from "react";
 import { ReactDOM } from "react";
-import  Form  from "react-router-dom";
 import {LOGIN_IMG} from "./constants"
 const Login =  ()=>{
     return(
         <div>
             <h2>Employee Polls</h2>
-            <img src={LOGIN_IMG} className="" alt="LOGIN_IMG" />
-             {/* <Form>
-                <label>User Name</label>
-                <input type="text" className="" />
-                <label>Password</label>
-                <input type="password" className="" />
+             <form>
+                <label>User className
+                <input type="text" className="" placeholder="username" /> </label><br/>
+                <label>Password
+                <input type="password" className="" placeholder="pasword" /> </label><br/>
                 <input type="submit" value="submit"/>
-             </Form> */}
+             </form>
         </div>
     )
 }
