@@ -1,15 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-// import Login from './Login';
-import Header from './components/Header';
-import Questions from './components/Questions';
+import Login from './Login';
+ 
 function App() {
   console.log("App.js")
   return (
     <div className="App">
-        {/* <Login/> */}
-        <Header/>
-        <Questions/>
+        <Login/>
+         
     </div>
   );
 }

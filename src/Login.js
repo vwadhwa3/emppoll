@@ -6,7 +6,7 @@ const Login =  ()=>{
         <div>
             <h2>Employee Polls</h2>
              <form>
-                <label>User className
+                <label>User Name
                 <input type="text" className="" placeholder="username" /> </label><br/>
                 <label>Password
                 <input type="password" className="" placeholder="pasword" /> </label><br/>
