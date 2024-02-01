@@ -52,8 +52,8 @@ const handleClick = (event) => {
 
                   <strong>logged in </strong>
 
-                   <Headers/>
-                   <Outlet/>
+                   {/* <Headers/>
+                   <Outlet/> */}
                 </div>
             ) :(
               <div>
@@ -75,41 +75,41 @@ const handleClick = (event) => {
 }
 
 
-const appRouter = createBrowserRouter([
-  {
-      path:"/",
-      element:<AppLayout/>,
-      children:[
-          {
-              path:"/",
-              element:<Body/>
+// const appRouter = createBrowserRouter([
+//   {
+//       path:"/",
+//       element:<AppLayout/>,
+//       children:[
+//           {
+//               path:"/",
+//               element:<Body/>
 
-          },
-          {
-              path:"/about",
-              element:<Suspense fallback= {<Shimmer/>}> <About/></Suspense>
+//           },
+//           {
+//               path:"/about",
+//               element:<Suspense fallback= {<Shimmer/>}> <About/></Suspense>
 
-          },
-          {
-              path:"/contact",
-              element:<Contact/>,
+//           },
+//           {
+//               path:"/contact",
+//               element:<Contact/>,
 
-          },
-          {
-              path:"/Grocery",
-              element:<Suspense fallback= {<Shimmer/>}>
-                          <Grocery/>
-                     </Suspense>  ,
+//           },
+//           {
+//               path:"/Grocery",
+//               element:<Suspense fallback= {<Shimmer/>}>
+//                           <Grocery/>
+//                      </Suspense>  ,
 
-          },
-          {
-              path: "/restaurants/:resId",
-              element:<RestaurantMenu />
-          }
-      ],
-      errorElement:<Error/>
-  },
-])
+//           },
+//           {
+//               path: "/restaurants/:resId",
+//               element:<RestaurantMenu />
+//           }
+//       ],
+//       errorElement:<Error/>
+//   },
+// ])
 
 
 
